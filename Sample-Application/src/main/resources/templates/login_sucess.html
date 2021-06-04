@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Success</title>
+    <link th:href="@{/css/s.css}"  rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    
+    <style>
+    
+    body
+      {
+         background:url([[@{/images/sample6.jpg}]])
+                     no-repeat center center fixed;
+          background-size: 1240px 600px;
+       
+       }
+       h3 {
+
+  color: blue;
+  text-shadow: 2px 2px 5px white;
+  font-weight: bold;
+  font-size: 40px;
+}
+     h4 {
+
+ color: blue;
+  text-shadow: 2px 2px 5px red;
+
+  font-weight: bold;
+ font-size: 25px;
+}   
+    
+    
+    </style>
+</head>
+<body>
+<nav>
+            <ul>
+		<!--menu-->
+                <li><a th:href="@{/homei}">Home</a></li>
+                <li><a th:href="@{/gallrie}">Gallery</a></li>
+                <li><a th:href="@{/vide}">Videos</a></li>
+                <li><a th:href="@{/regist}">Register</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+                 <li><a th:href="@{/riders}">List of Users</a></li>
+                 <li><a th:href="@{/admin_details}">Insert Items details</a></li>
+                 <li><a th:href="@{/items_det}">List of Items</a></li>
+                 <li><a th:href="@{/searchitems}">Search Items</a></li>
+            </ul>
+        </nav>
+    <div class="container text-center">
+        <h3>You have login  successfully!</h3>
+       <!-- <h4><a th:href="@{/riders}">List of Users</a></h4> -->
+    
+    </div>
+     
+</body>
+</html>

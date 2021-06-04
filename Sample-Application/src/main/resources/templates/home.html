@@ -1,0 +1,63 @@
++-+*<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+ <title>RM Shoes Store</title>
+        <link th:href="@{/css/s.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+        </header>
+        
+        <nav>
+            <ul>
+			     <!--menu-->
+                <li><a th:href="@{/homei}">Home</a></li>
+                <li><a th:href="@{/gallrie}">Gallery</a></li>
+                <li><a th:href="@{/vide}">Videos</a></li>
+                <li><a th:href="@{/regist}">Register</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+                <li><a th:href="@{/riders}">List of Users</a></li>
+                <li><a th:href="@{/admin_details}">Insert Items details</a></li>
+                 <li><a th:href="@{/items_det}">List of Items</a></li>
+                 <li><a th:href="@{/searchitems}">Search Items</a></li>
+                 
+               
+            </ul>
+        </nav>
+		
+		<section>
+		<h1> RM Store Shoes</h1>
+		<br />
+		   <!--כוכבים-->
+            <div class="star"></div>
+            <div class="star-s1">RM Shoe Store</div>
+            <div class="star-s2">RM</div>
+            <div class="star-s3">RM</div>
+            <div class="star-s4">RM</div>
+            <div class="star-s5">RM</div>
+            <div class="star-s6">RM</div>
+            <div class="star-s7">RM</div>
+            <div class="star-s8">RM</div>
+    
+
+		</section>
+        
+		<article>
+		<div class="demo-block">
+		 <svg>
+    <g id="text1">
+      <text x="50%" y="50%" id="text-path-anim2">
+        RM Shoes Store
+      </text>
+    </g>
+  </svg>
+</div>
+<img th:src="@{/images/s.jpg}" alt="Shoes">
+
+		</article>
+        <footer>
+            Welcome to RM Shoes Store
+        </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Video</title>
+    <link th:href="@{/css/s.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+ <header>
+        <nav>
+            <ul>
+                 <!--menu-->
+                <li><a th:href="@{/homei}">Home</a></li>
+                <li><a th:href="@{/gallrie}">Gallery</a></li>
+                 <li><a th:href="@{/vide}">Videos</a></li>
+                 <li><a th:href="@{/regist}">Register</a></li>
+                 <li><a th:href="@{/login}">Login</a></li>
+                  <li><a th:href="@{/riders}">List of Users</a></li>
+                  <li><a th:href="@{/admin_details}">Insert Items details</a></li>
+                  <li><a th:href="@{/items_det}">List of Items</a></li>
+                  <li><a th:href="@{/searchitems}">Search Items</a></li>
+                 
+          
+            </ul>
+        </nav>
+    </header>
+      <h3>Videos</h3>
+    <table cellspacing="10" class="table1">
+        
+        <tr>
+		<!--videos-->
+            <td><iframe width="400" height="315" th:src="@{https://www.youtube.com/embed/fCNJJmtDl5U}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p>Top 10 Best Shoe Brands For Men 2021</p>
+            </td>
+            <td><iframe width="400" height="315" th:src="@{https://www.youtube.com/embed/X7SSEtpB9nw}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>Top Ten Best Shoe Brands In The World</p>
+            </td>
+            <td><iframe width="400" height="315" th:src="@{https://www.youtube.com/embed/u-lx-j4wP8E}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>Top 10 most expensive shoe brands of 2021</p>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+         © 2021 RM and Company
+    </footer>
+</body>
+</html>

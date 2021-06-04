@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+ <link th:href="@{/css/s.css}" rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+
+<style>
+h1 {text-align: center;}  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 15px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+h1 {
+ 
+  color: black;
+  text-shadow: 2px 2px 5px red;
+  font-weight: bold;
+ 
+}
+</style>  
+</head>  
+<body> 
+<nav>
+            <ul>
+		<!--menu-->
+                <li><a th:href="@{/homei}">Home</a></li>
+                <li><a th:href="@{/gallrie}">Gallery</a></li>
+                <li><a th:href="@{/vide}">Videos</a></li>
+                <li><a th:href="@{/regist}">Register</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+                 <li><a th:href="@{/riders}">List of Users</a></li>
+                 <li><a th:href="@{/admin_details}">Insert Items details</a></li>
+                 <li><a th:href="@{/items_det}">List of Items</a></li>
+                 <li><a th:href="@{/searchitems}">Search Items</a></li>
+            </ul>
+        </nav> 
+<h1>Search Items Details</h1>
+
+<form th:action="@{/search_item}" th:object="${admin}"  method="post">  
+  <div class="container text-center">  
+    
+  <hr>  
+  <label> SEARCH BY ID </label>   
+<input type="text" th:field="*{id}"  placeholder= "Enter id"required /> 
+<button type="submit" class="registerbtn">Search</button> 
+ </div>
+</form> 
+<form th:action="@{/search_desc}" th:object="${admin}"  method="post">  
+  <div class="container text-center">  
+    
+  <hr>  
+  <label> SEARCH BY DESCRIPTION </label>   
+<input type="text" th:field="*{description}"  placeholder= "Enter description"required /> 
+<button type="submit" class="registerbtn">SearchByDesc</button> 
+ </div>
+</form>  
+
+
+</body>  
+</html>  
